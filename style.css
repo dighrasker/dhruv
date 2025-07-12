@@ -1,12 +1,25 @@
 *{
     margin : 0;
     padding: 0;
-    font-family: 'Marker Felt', fantasy;
+    font-family: "Playpen Sans Hebrew", cursive;
     box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;           /* so it lives on top of everything */
+}
+
+main {
+  padding-top: 100px;     /* push content down so it’s not hidden under the header */
+}
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    overflow-y: hidden;
 }
 
 body {
@@ -104,7 +117,7 @@ nav ul li a:hover::after {
 /*----------------------------About Page-----------------------------*/
 
 #about{
-    background: #303030;
+    background: #222222;
     padding: 80px 0;
     color: lightskyblue;
 }
@@ -120,14 +133,15 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img{
-    width: 100%;
+    margin-top: 50px;
+    width: 80%;
     border-radius: 15px;
 }
 .about-col-2{
     flex-basis: 50%;
 }
 .sub-title{
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: 60px;
     font-weight: 500;
     color: lightskyblue;
@@ -136,7 +150,7 @@ nav ul li a:hover::after {
 
 .text{
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     color: white;
     text-align: center;

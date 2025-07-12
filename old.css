@@ -1,197 +1,63 @@
-*{
-    margin : 0;
-    padding: 0;
-    font-family: 'Marker Felt', fantasy;
-    box-sizing: border-box;
-}
+/* style.css */
+/* Reset and base styles unchanged */
+*{ margin: 0; padding: 0; font-family: 'Marker Felt', fantasy; box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body { background: #222222; color: white; /* overflow hidden; remove if you want scrolling */ }
 
-html{
-    scroll-behavior: smooth;
-}
+/* Navbar styles: fixed at top, persistent */
+header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: rgba(34,34,34,0.9); }
+.navbar .nav-container { display: flex; align-items: center; justify-content: space-between; padding: 20px 100px; }
+.logo{ width: 75px; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin: 0 25px; }
+.nav-links a { color: white; text-decoration: none; font-size: 20px; position: relative; }
+.nav-links a::after { content: ''; width: 0; height: 3px; background: lightskyblue; position: absolute; left: 0; bottom: -6px; transition: 0.5s; }
+.nav-links a:hover::after { width: 100%; }
 
-body {
-    background: #222222;
-    color: white;
-
-}
-
-#home{
+/* Section styling: extended height to avoid adjacent content peeking */
+.section {
     width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-
-}
-
-.container {
-    padding: 50px 100px;
-}
-
-
-nav{
+    height: calc(120vh - 100px); /* extended height: 120% viewport minus header */
+    padding-top: 100px; /* space for fixed header */
     display: flex;
-    align-items:center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* hide any overflow from neighboring sections */
+}
+.full-screen { background-size: cover; background-position: center; }
+
+.container { padding: 0 100px; /* horizontal padding */ }
+
+/* Additional vertical spacing for content within about and projects */
+#about .container, #projects .container {
+    padding-top: 50px; /* extra space to push content down */
 }
 
-.logo{
-   width: 75px;
-}
-
-
-nav ul li {
-    display: inline-block;
-    /* Display navigation items horizontally */
-    list-style: none;
-    /* Remove default list styling */
-    margin: 10px 25px;
-    /* Margin between navigation items */
-}
-
-nav ul li a {
-    color: white;
-    /* Link text color */
-    text-decoration: none;
-    /* Remove underline from links */
-    font-size: 20px;
-    /* Font size of navigation links */
-    position: relative;
-    /* Position relative for pseudo-element */
-}
-
-/* Styles for the underline effect on navigation links */
-nav ul li a::after {
-    content: '';
-    /* Create a pseudo-element */
-    width: 0;
-    height: 3px;
-    /* Height of the underline */
-    background: lightskyblue;
-    /* Color of the underline */
-    position: absolute;
-    /* Position absolutely */
-    left: 0;
-    /* Align with the left edge of the link */
-    bottom: -6px;
-    /* Position the underline below the link */
-    transition: 0.5s;
-    /* Smooth transition effect */
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-    /* Expand the underline on hover */
-}
-
-/* Styles for the header text */
-
-
-/* Styles for the main heading within the header text */
-.header-text h1 {
-    font-size: 45px;
-    /* Font size of the main heading */
-    margin-top: 250px;
-    /* Top margin for the main heading */
-}
-
-/* Styles for the span element within the main heading */
-.header-text h1 span {
-    color: lightskyblue;
-    /* Color of the span text */
-}
+/* Header text styling */
+.header-text h1 { font-size: 45px; text-align: center; }
+.header-text h1 span { color: lightskyblue; }
 
 /*----------------------------About Page-----------------------------*/
+#about { background: #222222; /* unify background color */ color: lightskyblue; }
+.row{ display: flex; justify-content: space-between; flex-wrap: wrap; }
+.about-col-1{ flex-basis: 45%; }
+.about-col-1 img{ width: 80%; /* shrink image to avoid overlap */ border-radius: 15px; }
+.about-col-2{ flex-basis: 50%; }
+.sub-title{ font-size: 60px; font-weight: 500; color: lightskyblue; text-align: center; margin-bottom: 40px; }
+.text{ font-size: 25px; font-weight: 500; color: white; text-align: center; }
 
-#about{
-    background: #303030;
-    padding: 80px 0;
-    color: lightskyblue;
-}
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-1{
-    flex-basis: 45%;
-}
-
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
-.about-col-2{
-    flex-basis: 50%;
-}
-.sub-title{
-    margin-top: 60px;
-    font-size: 60px;
-    font-weight: 500;
-    color: lightskyblue;
-    text-align: center;
-}
-
-.text{
-    margin-top: 40px;
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-}
 /*--------------------------Projects----------------------------*/
+#projects{ background: #222222; }
+.projects-list{ display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-gap: 40px; }
+.projects-list div{ background: #262626; padding: 40px; font-size:13px; font-weight: 300; border-radius: 10px; transition: background 0.5s, transform 0.5s; }
+.projects-list div i{ font-size: 50px; margin-bottom: 30px; }
+.projects-list div h2{ font-size: 30px; font-weight: 500; margin-bottom: 15px; }
+.projects-list div a{ text-decoration: none; color: #ffffff; font-size: 12px; margin-top: 20px; display: inline-block; }
+.projects-list div:hover{ background: lightskyblue; transform: translateY(-10px); }
+.btn{ display: block; margin: 50px auto; width: fit-content; border: 1px solid lightskyblue; padding: 14px 50px; border-radius: 6px; text-decoration: none; color: #ffffff; transition: background 0.5s; }
+.btn:hover{ background: lightskyblue; }
 
-#projects{
-    padding: 30px 0;
-}
-.projects-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.projects-list div{
-    background: #262626;
-    padding: 40px;
-    font-size:13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: backgrounf 0.5s, transform 0.5s;
-
-}
-.projects-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.projects-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.projects-list div a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.projects-list div:hover{
-    background: lightskyblue;
-    transform: translateY(-10px);
-}
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid lightskyblue;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #ffffff;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: lightskyblue;
-}
+/*-------------------------Contact Section-------------------------*/
+#contact { background: #222222; color: lightskyblue; }
+#contact .container { padding-top: 50px; /* push contact details down */ }
+.text { font-size: 25px; text-align: center; }
