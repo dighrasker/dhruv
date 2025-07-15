@@ -5,21 +5,18 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
+  background: #222222;
   top: 0;
   left: 0;
   width: 100%;
+  height: 18%;
   z-index: 100;           /* so it lives on top of everything */
-}
-
-main {
-  padding-top: 100px;     /* push content down so it’s not hidden under the header */
-}
-
-html{
-    scroll-behavior: auto;
-    overflow-y: hidden;
 }
 
 body {
@@ -155,6 +152,14 @@ nav ul li a:hover::after {
     color: white;
     text-align: center;
 }
+
+li{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
 /*--------------------------Projects----------------------------*/
 
 #projects{
@@ -162,13 +167,13 @@ nav ul li a:hover::after {
 }
 .projects-list{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 .projects-list div{
     background: #262626;
-    padding: 40px;
+    padding: 20px;
     font-size:13px;
     font-weight: 300;
     border-radius: 10px;
@@ -180,7 +185,7 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
 }
 .projects-list div h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -190,6 +195,9 @@ nav ul li a:hover::after {
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+}
+.projects-list div:nth-child(n+4) {
+  display: none; /* edit */
 }
 .projects-list div:hover{
     background: lightskyblue;
