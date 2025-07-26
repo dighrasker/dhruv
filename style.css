@@ -110,6 +110,9 @@ nav ul li a:hover::after {
 
 /* Styles for the span element within the main heading */
 .header-text h1 span {
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
     color: lightskyblue;
     /* Color of the span text */
 }
@@ -167,6 +170,78 @@ li{
 
 #projects{
     padding: 30px 0;
+}
+.projects-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.projects-list div{
+    background: #262626;
+    padding: 20px;
+    font-size:13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: backgrounf 0.5s, transform 0.5s;
+
+}
+.projects-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.projects-list div h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.projects-list div a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* .projects-list div:nth-child(n+4) {
+  display: none; /* edit 
+} */
+/* Hide the second grid by default */
+.more-projects { display: none; }
+
+/* Reveal when its id is targeted, e.g., #more in the URL */
+.more-projects:target { display: grid; }
+
+/* Optional: avoid the fixed header covering the anchor */
+#more { scroll-margin-top: 120px; }  /* adjust to your header height */
+#projects { scroll-margin-top: 120px; }
+.projects-list div:hover{
+    background: lightskyblue;
+    transform: translateY(-10px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid lightskyblue;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: lightskyblue;
+}
+
+/*--------------------------Project Item----------------------------*/
+
+#projects{
+    padding: 30px 0;
+}
+.sub-title {
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .projects-list{
     display:grid;

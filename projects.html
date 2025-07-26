@@ -18,17 +18,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
             <nav class="navbar container">
-            <img src="image/Logo.png" class="logo" alt="Logo">
+            <a href ="index.html">
+                <img src="image/Logo.png" class="logo" alt="Logo">
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
             </ul>
             </nav>
         </header>
@@ -36,59 +39,71 @@
             <!--------------------------Projects------------------------------>
             <div id="projects">
                 <div class="container">
-                    <h1 class="sub-title">Projects</h1>
+                    <h1 class="sub-title">projects</h1>
                     <div class="projects-list">
                         <div>
-                            <i class="fa-solid fa-microchip"></i>
-                            <h2>127 MHz RISC-V CPU</h2>
-                            <p>
-                                Designed and verified a 32-bit N-way superscalar RISC-V processor in SystemVerilog with out-of-order execution based 
-                                on MIPS R10K, featuring register renaming, non-blocking caches, and a tournament branch predictor; developed custom 
-                                testbenches and SVAs to validate functionality and achieved a 7.8ns clock period with 8.79ns/inst performance
-                            </p>
+                            <a href= "RVCPU.html">
+                                <i class="fa-solid fa-microchip"></i>
+                                <h2>127 MHz RISC-V CPU</h2>
+                                <p>
+                                    Designed and verified a 32-bit N-way superscalar RISC-V processor in SystemVerilog with out-of-order execution based 
+                                    on MIPS R10K, featuring register renaming, non-blocking caches, and a tournament branch predictor; developed custom 
+                                    testbenches and SVAs to validate functionality and achieved a 7.8ns clock period with 8.79ns/inst performance
+                                </p>
+                            </a>
                         </div>
                         <div>
-                            <i class="fa-solid fa-code-compare"></i>
-                            <h2>UVM Testing Env for Write-Back L2 Cache</h2>
-                            <p>
-                            Created a modular UVM testbench (10+ reusable components) to verify a 4-core L2 cache with MESI coherence, MSHRs, and 
-                            AXI4-Lite DRAM interface; achieved 95\% functional coverage and identified bugs through directed testing
-                            </p>
+                            <a href= "WBC.html">
+                                <i class="fa-solid fa-code-compare"></i>
+                                <h2>UVM Env. for L2 Cache</h2>
+                                <p>
+                                Created a modular UVM testbench (10+ reusable components) to verify a 4-core L2 cache with MESI coherence, MSHRs, and 
+                                AXI4-Lite DRAM interface; achieved 95\% functional coverage and identified bugs through directed testing
+                                </p>
+                            </a>
                         </div>
                         <div>
-                            <i class="fa-solid fa-wave-square"></i>
-                            <h2>8-Bit Ripple-Carry Adder</h2>
-                            <p>
-                                Designed and tested two 8-bit ripple carry adders in Cadence Virtuoso, creating 10+ schematic components, integrating 
-                                registers and muxes for mode changes, and optimizing transistor sizing and logic families to achieve 1.5 GHz 
-                                functionality with a power consumption of 3.594 pW.
-                            </p>
+                            <a href ="RCA.html">  
+                                <i class="fa-solid fa-wave-square"></i>
+                                <h2>8-Bit Ripple-Carry Adder</h2>
+                                <p>
+                                    Designed and tested two 8-bit ripple carry adders in Cadence Virtuoso, creating 10+ schematic components, integrating 
+                                    registers and muxes for mode changes, and optimizing transistor sizing and logic families to achieve 1.5 GHz 
+                                    functionality with a power consumption of 3.594 pW.
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div id="more" class="projects-list more-projects">
                         <div>
-                            <i class="fa-solid fa-calculator"></i>
-                            <h2>RTL Four Function Calculator on FPGA</h2>
-                            <p>
-                                Engineered four-function calculator on DE2-115 FPGA using Verilog for RTL design, implementing basic arithmetic 
-                                operations on 11-bit two's complement integers, with input via push-buttons and slider switches, and outputs displayed 
-                                on 7-segment displays, achieving functional correctness verified through ModelSim simulations and hardware testing.
-                            </p>
+                            <a href ="FFC.html">
+                                <i class="fa-solid fa-calculator"></i>
+                                <h2>RTL Four Function Calculator on FPGA</h2>
+                                <p>
+                                    Engineered four-function calculator on DE2-115 FPGA using Verilog for RTL design, implementing basic arithmetic 
+                                    operations on 11-bit two's complement integers, with input via push-buttons and slider switches, and outputs displayed 
+                                    on 7-segment displays, achieving functional correctness verified through ModelSim simulations and hardware testing.
+                                </p>
+                            </a>
                         </div>
                         <div>
-                            <i class="fa-solid fa-laptop"></i>
-                            <h2>Pipelined MIPS Processor Simulator</h2>
-                            <p>
-                                Developed MIPS-like processor simulator in C featuring 5-stage pipeline, cache memory, and DMA, incorporating techniques
-                                for hazard detection, forwarding, and stalling to optimize instruction throughout and memory handling
-                            </p>
+                            <a href = "MPS.html">
+                                <i class="fa-solid fa-laptop"></i>
+                                <h2>Pipelined MIPS Processor Simulator</h2>
+                                <p>
+                                    Developed MIPS-like processor simulator in C featuring 5-stage pipeline, cache memory, and DMA, incorporating techniques
+                                    for hazard detection, forwarding, and stalling to optimize instruction throughout and memory handling
+                                </p>
+                            </a>
                         </div>
                         <div>
-                            <i class="fa-solid fa-code"></i>
-                            <h2>Custom Thread Library w/ Scheduler</h2>
-                            <p>Created custom thread library in C with cooperative scheduler, implementing thread management, synchronization via 
-                                mutexes, condition variables, and context switching, enabling efficient multi-threading in simulated environment
-                            </p>
+                            <a href = "CTL.html">
+                                <i class="fa-solid fa-code"></i>
+                                <h2>Custom Thread Library w/ Scheduler</h2>
+                                <p>Created custom thread library in C with cooperative scheduler, implementing thread management, synchronization via 
+                                    mutexes, condition variables, and context switching, enabling efficient multi-threading in simulated environment
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <!-- Button: point to #more -->
