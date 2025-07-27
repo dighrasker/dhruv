@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
+        <meta charset="UTF-8">
+
+        <!-- Specifies the compatibility mode for Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Sets the viewport properties for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the webpage -->
+        <title>Personal Portfolio Website</title>
+
+        <!-- Link to the external stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar container">
+            <ul class="nav-links">
+                <li><a href="projects.html">back</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+             <!---------------------------About------------------------------>
+            <div id="projElt">
+                <div class="container">
+                     <h1 class="sub-title">127 MHz RISC-V CPU</h1>
+                    <div class = "row">
+                        <div class ="about-col-1"> </div>
+                        <div class="about-col-2">
+                            <p class = "text">
+                                Designed and verified a 32-bit N-way superscalar RISC-V processor in SystemVerilog with out-of-order execution based 
+                                on MIPS R10K, featuring register renaming, non-blocking caches, and a tournament branch predictor; developed custom 
+                                testbenches and SVAs to validate functionality and achieved a 7.8ns clock period with 8.79ns/inst performance
+                            </p>
+                            <p class = "text">
+                                Tools: Verilog/SystemVerilog, TCL, Verdi, Bash, SVA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

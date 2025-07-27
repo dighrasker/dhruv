@@ -42,7 +42,7 @@
                     <h1 class="sub-title">projects</h1>
                     <div class="projects-list">
                         <div>
-                            <a href= "RVCPU.html">
+                            <!-- <a href= "RVCPU.html"> -->
                                 <i class="fa-solid fa-microchip"></i>
                                 <h2>127 MHz RISC-V CPU</h2>
                                 <p>
@@ -50,20 +50,20 @@
                                     on MIPS R10K, featuring register renaming, non-blocking caches, and a tournament branch predictor; developed custom 
                                     testbenches and SVAs to validate functionality and achieved a 7.8ns clock period with 8.79ns/inst performance
                                 </p>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <div>
-                            <a href= "WBC.html">
+                            <!-- <a href= "WBC.html"> -->
                                 <i class="fa-solid fa-code-compare"></i>
                                 <h2>UVM Env. for L2 Cache</h2>
                                 <p>
                                 Created a modular UVM testbench (10+ reusable components) to verify a 4-core L2 cache with MESI coherence, MSHRs, and 
                                 AXI4-Lite DRAM interface; achieved 95\% functional coverage and identified bugs through directed testing
                                 </p>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <div>
-                            <a href ="RCA.html">  
+                            <!-- <a href ="RCA.html">   -->
                                 <i class="fa-solid fa-wave-square"></i>
                                 <h2>8-Bit Ripple-Carry Adder</h2>
                                 <p>
@@ -71,12 +71,12 @@
                                     registers and muxes for mode changes, and optimizing transistor sizing and logic families to achieve 1.5 GHz 
                                     functionality with a power consumption of 3.594 pW.
                                 </p>
-                            </a>
+                            <!-- </a> -->
                         </div>
                     </div>
                     <div id="more" class="projects-list more-projects">
                         <div>
-                            <a href ="FFC.html">
+                            <!-- <a href ="FFC.html"> -->
                                 <i class="fa-solid fa-calculator"></i>
                                 <h2>RTL Four Function Calculator on FPGA</h2>
                                 <p>
@@ -84,26 +84,37 @@
                                     operations on 11-bit two's complement integers, with input via push-buttons and slider switches, and outputs displayed 
                                     on 7-segment displays, achieving functional correctness verified through ModelSim simulations and hardware testing.
                                 </p>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <div>
-                            <a href = "MPS.html">
+                            <!-- <a href = "MPS.html"> -->
                                 <i class="fa-solid fa-laptop"></i>
                                 <h2>Pipelined MIPS Processor Simulator</h2>
                                 <p>
                                     Developed MIPS-like processor simulator in C featuring 5-stage pipeline, cache memory, and DMA, incorporating techniques
                                     for hazard detection, forwarding, and stalling to optimize instruction throughout and memory handling
                                 </p>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <div>
-                            <a href = "CTL.html">
-                                <i class="fa-solid fa-code"></i>
-                                <h2>Custom Thread Library w/ Scheduler</h2>
-                                <p>Created custom thread library in C with cooperative scheduler, implementing thread management, synchronization via 
-                                    mutexes, condition variables, and context switching, enabling efficient multi-threading in simulated environment
+                            <!-- <a href = "CTL.html"> -->
+                                <i class="fa-solid fa-brain"></i>
+                                <h2>Fine-Tuned + Quantized Gemma 3n</h2>
+                                <p>Fine-tuned Gemma 3n, an 8B-parameter vision-language model, for on-device image inference by analyzing the impact of prompt 
+                                    complexity, image resolution, and token limits; successfully quantized the model from 10GB to 4GB, reducing memory usage 
+                                    by 60% while limiting accuracy loss to just 18\% through targeted fine-tuning with client-relevant datasets
                                 </p>
-                            </a>
+                            <!-- </a> -->
+                        </div>
+                        <div>
+                            <!-- <a href = "CTL.html"> -->
+                                <i class="fa-solid fa-code-branch"></i>
+                                <h2>Branch Predictor Area Simulator</h2>
+                                <p>Evaluated state-of-the-art branch predictors (TAGE, perceptron-based) in gem5 by reconfiguring prediction models and
+                                    benchmarking with real workloads; synthesized RTL designs using Synopsys Design Compilier to analyze area
+                                    breakdowns, achieving insights into SRAM contributions comprising up to 70% of total silicon area       
+                                </p>
+                            <!-- </a> -->
                         </div>
                     </div>
                     <!-- Button: point to #more -->
