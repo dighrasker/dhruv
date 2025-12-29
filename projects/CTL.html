@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
+        <meta charset="UTF-8">
+
+        <!-- Specifies the compatibility mode for Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Sets the viewport properties for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the webpage -->
+        <title>Personal Portfolio Website</title>
+
+        <!-- Link to the external stylesheet -->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar container">
+            <ul class="nav-links">
+                <li><a href="../projects.html">back</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <!---------------------------Project Page------------------------------>
+            <div id="projElt">
+                <div class="container">
+                <h1 class="sub-title">custom thread library</h1>
+
+                <!-- <div class="row"> -->
+                    <!-- Keep left side blank -->
+                
+
+                    <!-- Right side content -->
+                    <!-- <div class="about-col-2"> -->
+
+                    <!-- Overview -->
+                    <section class="proj-section">
+                        <h2 class="proj-header">overview</h2>
+                        <p class="text">
+                            This project implements a user-level thread library in C++ that supports preemptive and cooperative 
+                            multithreading across single- and multi-CPU environments, closely modeling core operating-system 
+                            scheduling and synchronization mechanisms. The library provides thread creation, context switching,
+                            joining, mutexes, and condition variables, with execution driven by timer and inter-processor 
+                            interrupts and coordinated through a shared FIFO-ready scheduler.
+                        </p>
+                        
+                        <p class="text">
+                            Thread execution is managed using x86-64 ucontext primitives (makecontext, swapcontext, setcontext), 
+                            with careful handling of thread lifetimes, stack allocation, and atomic interrupt control to ensure 
+                            correctness under concurrency.
+                        </p>
+                        <p class="text">
+                            The implementation emphasizes OS-level invariants such as atomic context switches, efficient CPU 
+                            suspension when idle, FIFO fairness, and robust error detection, offering hands-on experience with 
+                            low-level scheduling, synchronization, and multiprocessor coordination. 
+                        </p>
+                        
+                    </section>
+
+                    <!-- Tools -->
+                    <section class="proj-section">
+                        <h2 class="proj-header">tools</h2>
+                        <ul class="proj-list">
+                        <li>C++, make, bash</li>
+                        <!-- </ul> -->
+                    </section>
+
+                    <!-- Additional Repo -->
+                    <!-- <section class="proj-section">
+                        <h2 class="proj-header">additional information</h2>
+                        <a class="proj-link" href="https://github.com/dighrasker/MIPS_R10k_RISCV_OoO_Processor" target="_blank" rel="noopener noreferrer">
+                        repository
+                        </a> 
+                        <a class="proj-link" href="../additional/470_Report.pdf" target="_blank" rel="noopener noreferrer">
+                        report
+                        </a>
+                    </section> -->
+
+                    <!-- </div> -->
+                <!-- </div> -->
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

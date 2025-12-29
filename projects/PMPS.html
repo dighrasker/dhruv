@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
+        <meta charset="UTF-8">
+
+        <!-- Specifies the compatibility mode for Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Sets the viewport properties for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the webpage -->
+        <title>Personal Portfolio Website</title>
+
+        <!-- Link to the external stylesheet -->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar container">
+            <ul class="nav-links">
+                <li><a href="../projects.html">back</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <!---------------------------Project Page------------------------------>
+            <div id="projElt">
+                <div class="container">
+                <h1 class="sub-title">pipelined mips processor simulator</h1>
+
+                <!-- <div class="row"> -->
+                    <!-- Keep left side blank -->
+                   
+
+                    <!-- Right side content -->
+                    <!-- <div class="about-col-2"> -->
+                    
+                        <!-- <section class="proj-section"> -->
+                             <div class="about-col-1 proj-images">
+                                <img src="../image/5_Stage_Pipeline.png" alt="CPU Analysis Diagram">
+                            </div>
+                        <!-- </section> -->
+                        <!-- Overview -->
+                        <section class="proj-section">
+                            <h2 class="proj-header">overview</h2>
+                            <p class="text">
+                            This project implements a MIPS-like processor simulator in C that models a classic five-stage 
+                            pipeline (IF, ID, EX, MEM, WB) with integrated cache memory support. The simulator incorporates
+                             hardware-accurate mechanisms for data and control hazard detection, including forwarding paths
+                              and pipeline stalling, to preserve correctness while maximizing instruction throughput. </p> 
+                              <p class="text">By 
+                              simulating cycle-by-cycle pipeline behavior and memory interactions, the design enables 
+                              detailed analysis of instruction flow, hazard resolution, and cache effects on performance, 
+                              providing hands-on insight into the microarchitectural tradeoffs of pipelined processor 
+                              design. </p>
+                        </section>
+
+                        <!-- Tools -->
+                        <section class="proj-section">
+                            <h2 class="proj-header">tools</h2>
+                            <ul class="proj-list">
+                            <li>C/C++, make, bash </li>
+                            <!-- <li>TCL</li>
+                            <li>Verdi</li>
+                            <li>Bash</li>
+                            <li>SystemVerilog Assertions (SVA)</li> -->
+                            </ul>
+                        </section>
+
+                        <!-- Additional Repo -->
+                        <!-- <section class="proj-section">
+                            <h2 class="proj-header">additional information</h2>
+                            
+                            <a class="proj-link" href="https://github.com/dighrasker/MIPS_R10k_RISCV_OoO_Processor" target="_blank" rel="noopener noreferrer">
+                            repository
+                            </a> 
+                            <a class="proj-link" href="470_Report.pdf" target="_blank" rel="noopener noreferrer">
+                            report
+                            </a>
+                        </section> -->
+
+                    <!-- </div> -->
+                <!-- </div> -->
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

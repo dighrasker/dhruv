@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
+        <meta charset="UTF-8">
+
+        <!-- Specifies the compatibility mode for Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Sets the viewport properties for responsive design -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the webpage -->
+        <title>Personal Portfolio Website</title>
+
+        <!-- Link to the external stylesheet -->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar container">
+            <ul class="nav-links">
+                <li><a href="../projects.html">back</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <!---------------------------Project Page------------------------------>
+            <div id="projElt">
+                <div class="container">
+                <h1 class="sub-title">127 mhz risc-v cpu</h1>
+
+                <div class="row">
+                    <!-- Keep left side blank -->
+                    <div class="about-col-1 proj-images">
+                         <img src="../image/CPU_Architectural_Diagram.png" alt="CPU Analysis Diagram">
+                        <img src="../image/CPU_Analysis.png" alt="CPU Analysis Diagram">
+                        <!-- Add more images if you want -->
+                        <!-- <img src="image/CPU_Analysis_2.png" alt="Pipeline Diagram"> -->
+                    </div>
+
+                    <!-- Right side content -->
+                    <div class="about-col-2">
+
+                    <!-- Overview -->
+                    <section class="proj-section">
+                        <h2 class="proj-header">overview</h2>
+                        <p class="text">
+                        we designed and implemented a high-performance out-of-order superscalar processor based on the 
+                        mips r10k architecture, incorporating advanced features such as n-way superscalar execution, early 
+                        branch resolution, early tag broadcasting, and a tournament branch predictor. </p> <p class="text">the design includes 
+                        a non-blocking 16-way associative data cache with a victim cache, instruction prefetching, and 
+                        full support for out-of-order memory execution via a store queue with load-to-store data 
+                        forwarding. Key architectural enhancements include a unified freddy list for register management, 
+                        fifo-based mshrs, and dedicated load, store, and writeback buffers. </p><p class="text">the processor achieved a 7.85 
+                        ns clock period, with an average weighted CPI of 1.12, corresponding to 8.79 ns per instruction, 
+                        demonstrating strong performance and efficient exploitation of instruction-level parallelism.
+                        </p>
+                        
+                    </section>
+
+                    <!-- Tools -->
+                    <section class="proj-section">
+                        <h2 class="proj-header">tools</h2>
+                        <ul class="proj-list">
+                        <li>verilog / systemverilog, tcl, verdi, bash, systemverilog assertions (sva) </li>
+                        <!-- <li>TCL</li>
+                        <li>Verdi</li>
+                        <li>Bash</li>
+                        <li>SystemVerilog Assertions (SVA)</li> -->
+                        </ul>
+                    </section>
+
+                    <!-- Additional Repo -->
+                    <section class="proj-section">
+                        <h2 class="proj-header">additional information</h2>
+                        <!-- <p class="text">
+                        You can view the project repository here
+                        </p> -->
+
+                        <!-- Replace with your real link -->
+                        <a class="proj-link" href="https://github.com/dighrasker/MIPS_R10k_RISCV_OoO_Processor" target="_blank" rel="noopener noreferrer">
+                        repository
+                        </a> 
+                        <a class="proj-link" href="../additional/470_Report.pdf" target="_blank" rel="noopener noreferrer">
+                        report
+                        </a>
+                    </section>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

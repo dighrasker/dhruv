@@ -1,0 +1,37 @@
+<p>
+Designed and verified a 32-bit N-way superscalar RISC-V processor in SystemVerilog with out-of-order execution based 
+on MIPS R10K, featuring register renaming, non-blocking caches, and a tournament branch predictor; developed custom 
+testbenches and SVAs to validate functionality and achieved a 7.8ns clock period with 8.79ns/inst performance
+</p>
+
+                                <p>
+                                Created a modular UVM testbench (10+ reusable components) to verify a 4-core L2 cache with MESI coherence, MSHRs, and 
+                                AXI4-Lite DRAM interface; achieved 95\% functional coverage and identified bugs through directed testing
+                                </p>
+
+                                <p>
+                                    Designed and tested two 8-bit ripple carry adders in Cadence Virtuoso, creating 10+ schematic components, integrating 
+                                    registers and muxes for mode changes, and optimizing transistor sizing and logic families to achieve 1.5 GHz 
+                                    functionality with a power consumption of 3.594 pW.
+                                </p>
+
+                                <p>
+                                    Engineered four-function calculator on DE2-115 FPGA using Verilog for RTL design, implementing basic arithmetic 
+                                    operations on 11-bit two's complement integers, with input via push-buttons and slider switches, and outputs displayed 
+                                    on 7-segment displays, achieving functional correctness verified through ModelSim simulations and hardware testing.
+                                </p>
+
+                                <p>
+                                    Developed MIPS-like processor simulator in C featuring 5-stage pipeline, cache memory, and DMA, incorporating techniques
+                                    for hazard detection, forwarding, and stalling to optimize instruction throughout and memory handling
+                                </p>
+
+                                <p>Fine-tuned Gemma 3n, an 8B-parameter vision-language model, for on-device image inference by analyzing the impact of prompt 
+                                    complexity, image resolution, and token limits; successfully quantized the model from 10GB to 4GB, reducing memory usage 
+                                    by 60% while limiting accuracy loss to just 18\% through targeted fine-tuning with client-relevant datasets
+                                </p>
+
+                                <p>Evaluated state-of-the-art branch predictors (TAGE, perceptron-based) in gem5 by reconfiguring prediction models and
+                                    benchmarking with real workloads; synthesized RTL designs using Synopsys Design Compilier to analyze area
+                                    breakdowns, achieving insights into SRAM contributions comprising up to 70% of total silicon area       
+                                </p>

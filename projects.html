@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,84 +42,45 @@
                 <div class="container">
                     <h1 class="sub-title">projects</h1>
                     <div class="projects-list">
-                        <div>
-                            <!-- <a href= "RVCPU.html"> -->
-                                <i class="fa-solid fa-microchip"></i>
-                                <h2>127 MHz RISC-V CPU</h2>
-                                <p>
-                                    Designed and verified a 32-bit N-way superscalar RISC-V processor in SystemVerilog with out-of-order execution based 
-                                    on MIPS R10K, featuring register renaming, non-blocking caches, and a tournament branch predictor; developed custom 
-                                    testbenches and SVAs to validate functionality and achieved a 7.8ns clock period with 8.79ns/inst performance
-                                </p>
-                            <!-- </a> -->
-                        </div>
-                        <div>
-                            <!-- <a href= "WBC.html"> -->
-                                <i class="fa-solid fa-code-compare"></i>
-                                <h2>UVM Env. for L2 Cache</h2>
-                                <p>
-                                Created a modular UVM testbench (10+ reusable components) to verify a 4-core L2 cache with MESI coherence, MSHRs, and 
-                                AXI4-Lite DRAM interface; achieved 95\% functional coverage and identified bugs through directed testing
-                                </p>
-                            <!-- </a> -->
-                        </div>
-                        <div>
-                            <!-- <a href ="RCA.html">   -->
-                                <i class="fa-solid fa-wave-square"></i>
-                                <h2>8-Bit Ripple-Carry Adder</h2>
-                                <p>
-                                    Designed and tested two 8-bit ripple carry adders in Cadence Virtuoso, creating 10+ schematic components, integrating 
-                                    registers and muxes for mode changes, and optimizing transistor sizing and logic families to achieve 1.5 GHz 
-                                    functionality with a power consumption of 3.594 pW.
-                                </p>
-                            <!-- </a> -->
-                        </div>
-                    </div>
-                    <div id="more" class="projects-list more-projects">
-                        <div>
-                            <!-- <a href ="FFC.html"> -->
-                                <i class="fa-solid fa-calculator"></i>
-                                <h2>RTL Four Function Calculator on FPGA</h2>
-                                <p>
-                                    Engineered four-function calculator on DE2-115 FPGA using Verilog for RTL design, implementing basic arithmetic 
-                                    operations on 11-bit two's complement integers, with input via push-buttons and slider switches, and outputs displayed 
-                                    on 7-segment displays, achieving functional correctness verified through ModelSim simulations and hardware testing.
-                                </p>
-                            <!-- </a> -->
-                        </div>
-                        <div>
-                            <!-- <a href = "MPS.html"> -->
-                                <i class="fa-solid fa-laptop"></i>
-                                <h2>Pipelined MIPS Processor Simulator</h2>
-                                <p>
-                                    Developed MIPS-like processor simulator in C featuring 5-stage pipeline, cache memory, and DMA, incorporating techniques
-                                    for hazard detection, forwarding, and stalling to optimize instruction throughout and memory handling
-                                </p>
-                            <!-- </a> -->
-                        </div>
-                        <div>
-                            <!-- <a href = "CTL.html"> -->
-                                <i class="fa-solid fa-brain"></i>
-                                <h2>Fine-Tuned + Quantized Gemma 3n</h2>
-                                <p>Fine-tuned Gemma 3n, an 8B-parameter vision-language model, for on-device image inference by analyzing the impact of prompt 
-                                    complexity, image resolution, and token limits; successfully quantized the model from 10GB to 4GB, reducing memory usage 
-                                    by 60% while limiting accuracy loss to just 18\% through targeted fine-tuning with client-relevant datasets
-                                </p>
-                            <!-- </a> -->
-                        </div>
-                        <div>
-                            <!-- <a href = "CTL.html"> -->
-                                <i class="fa-solid fa-code-branch"></i>
-                                <h2>Branch Predictor Area Simulator</h2>
-                                <p>Evaluated state-of-the-art branch predictors (TAGE, perceptron-based) in gem5 by reconfiguring prediction models and
-                                    benchmarking with real workloads; synthesized RTL designs using Synopsys Design Compilier to analyze area
-                                    breakdowns, achieving insights into SRAM contributions comprising up to 70% of total silicon area       
-                                </p>
-                            <!-- </a> -->
-                        </div>
+                        <a href="projects/RVCPU.html" class="project-tile">
+                            <i class="fa-solid fa-microchip"></i>
+                            <h2>127 mhz risc-v cpu</h2>
+                        </a>
+                        <a href="projects/FAAA.html" class="project-tile">
+                            <i class="fa-solid fa-wave-square"></i>
+                            <h2>flashattention-asic-accelerator</h2>
+                        </a>
+                        <a href="projects/WBC.html" class="project-tile">
+                            <i class="fa-solid fa-code-compare"></i>
+                            <h2>uvm env. for l2 cache</h2>  
+                        </a>
+                        <a href="projects/RCA.html" class="project-tile">
+                            <i class="fa-solid fa-wave-square"></i>
+                            <h2>8-bit ripple-carry adder</h2>
+                        </a>
+                        <a href="projects/FFC.html" class="project-tile">
+                            <i class="fa-solid fa-calculator"></i>
+                            <h2>rtl four function calculator on fpga</h2>
+                        </a>
+                        <a href="projects/PMPS.html" class="project-tile">
+                            <i class="fa-solid fa-laptop"></i>
+                            <h2>pipelined mips processor simulator</h2>
+                        </a>
+                        <!-- <a href="projects/CIPL.html" class="project-tile">
+                            <i class="fa-solid fa-brain"></i>
+                            <h2>Custom IP Library</h2>
+                        </a> -->
+                        <!-- <a href="projects/BPAS.html" class="project-tile">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h2>branch predictor area simulator</h2>
+                        </a> -->
+                        <a href="projects/CTL.html" class="project-tile">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <h2>custom thread library</h2>
+                        </a>
                     </div>
                     <!-- Button: point to #more -->
-                    <a href="#more" class="btn">See more</a>
+                    <!-- <a href="#more" class="btn">see more</a> -->
                 </div>
             </div>
         </main>

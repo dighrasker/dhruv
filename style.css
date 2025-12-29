@@ -1,7 +1,7 @@
 *{
     margin : 0;
     padding: 0;
-    font-family: "Funnel Sans", sans-serif;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -110,7 +110,7 @@ nav ul li a:hover::after {
 
 /* Styles for the span element within the main heading */
 .header-text h1 span {
-    font-family: "Luxurious Roman", serif;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: lightskyblue;
@@ -154,7 +154,7 @@ nav ul li a:hover::after {
 .text{
     margin-top: 40px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     text-align: center;
 }
@@ -232,8 +232,8 @@ nav ul li a:hover::after {
     padding: 30px 0;
 }
 .sub-title {
-    font-family: "Luxurious Roman", serif;
-    font-weight: 400;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 300;
     font-style: normal;
 }
 .projects-list{
@@ -241,32 +241,35 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+
+    
 }
-.projects-list div{
-    background: #262626;
+.projects-list a{
+    background: #2f2f2f;
     padding: 20px;
     font-size:13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: backgrounf 0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
+
+    color: #ffffff;          /* <-- add this */
+    text-decoration: none;   /* <-- add this */
+    display: flex;          /* (recommended) makes the whole tile clickable */
+    align-items: center;   /* vertically centers icon + text */
+    gap: 16px;             /* space between icon and title */
 
 }
-.projects-list div i{
+
+.projects-list a i{
     font-size: 50px;
-    margin-bottom: 30px;
+    padding: 20px;
 }
-.projects-list div h2{
-    font-size: 25px;
+.projects-list a h2{
+    font-size: 20px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-.projects-list div a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
+
 /* .projects-list div:nth-child(n+4) {
   display: none; /* edit 
 } */
@@ -279,7 +282,7 @@ nav ul li a:hover::after {
 /* Optional: avoid the fixed header covering the anchor */
 #more { scroll-margin-top: 120px; }  /* adjust to your header height */
 #projects { scroll-margin-top: 120px; }
-.projects-list div:hover{
+.projects-list a:hover{
     background: lightskyblue;
     transform: translateY(-10px);
 }
@@ -326,7 +329,7 @@ nav ul li a:hover::after {
     flex-basis: 50%;
 }
 .sub-title{
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 60px;
     font-weight: 500;
     color: lightskyblue;
@@ -334,9 +337,9 @@ nav ul li a:hover::after {
 }
 
 .text{
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     text-align: left;
 }
@@ -347,6 +350,62 @@ li{
     font-weight: 500;
     color: white;
     text-align: center;
+}
+
+  .proj-section {
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .proj-header {
+    font-size: 28px;
+    font-weight: 500;
+    color: lightskyblue;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .proj-list {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .proj-list li {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+  }
+
+  .proj-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid lightskyblue;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+
+  .proj-link:hover {
+    background: lightskyblue;
+    color: #222222;
+  }
+
+  .proj-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-images img {
+    width: 100%;
+    max-width: 400px;   /* prevents it from overpowering the text */
+    margin-bottom: 30px;
+    border-radius: 12px;
 }
 
 /*-------------small screen--------*/
