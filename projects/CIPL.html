@@ -52,15 +52,20 @@
                     <section class="proj-section">
                         <h2 class="proj-header">overview</h2>
                         <p class="text">
-                        we designed and implemented a high-performance out-of-order superscalar processor based on the 
-                        mips r10k architecture, incorporating advanced features such as n-way superscalar execution, early 
-                        branch resolution, early tag broadcasting, and a tournament branch predictor. </p> <p class="text">the design includes 
-                        a non-blocking 16-way associative data cache with a victim cache, instruction prefetching, and 
-                        full support for out-of-order memory execution via a store queue with load-to-store data 
-                        forwarding. Key architectural enhancements include a unified freddy list for register management, 
-                        fifo-based mshrs, and dedicated load, store, and writeback buffers. </p><p class="text">the processor achieved a 7.85 
-                        ns clock period, with an average weighted CPI of 1.12, corresponding to 8.79 ns per instruction, 
-                        demonstrating strong performance and efficient exploitation of instruction-level parallelism.
+                        This project is a growing custom RTL IP library focused on designing reusable, parameterized 
+                        SystemVerilog components for processor datapaths and SoC-style systems. The library emphasizes 
+                        clean interfaces, hardware-realistic implementations, and composability, with IP blocks designed 
+                        to reflect patterns used in real microarchitectures rather than single-purpose designs. 
+                         </p> <p class="text">
+                        Current components include an RV32-style integer ALU, synchronous and asynchronous FIFOs for 
+                        buffering and clock-domain crossing, and configurable arbiters supporting round-robin and 
+                        fixed-priority policies. 
+                         </p> <p class="text">
+                        Planned extensions include a memory interface / BRAM wrapper and ready–valid pipeline registers 
+                        with skid buffering, targeting robust backpressure handling and timing-friendly integration. 
+                         </p> <p class="text">
+                        Together, the library serves as a foundation for building scalable RTL systems while enforcing 
+                        disciplined design and verification practices.
                         </p>
                         
                     </section>
@@ -69,7 +74,7 @@
                     <section class="proj-section">
                         <h2 class="proj-header">tools</h2>
                         <ul class="proj-list">
-                        <li>verilog / systemverilog, tcl, verdi, bash, systemverilog assertions (sva) </li>
+                        <li>verilog / systemverilog, make, verdi, bash </li>
                         <!-- <li>TCL</li>
                         <li>Verdi</li>
                         <li>Bash</li>
@@ -80,17 +85,9 @@
                     <!-- Additional Repo -->
                     <section class="proj-section">
                         <h2 class="proj-header">additional information</h2>
-                        <!-- <p class="text">
-                        You can view the project repository here
-                        </p> -->
-
-                        <!-- Replace with your real link -->
-                        <a class="proj-link" href="https://github.com/dighrasker/MIPS_R10k_RISCV_OoO_Processor" target="_blank" rel="noopener noreferrer">
+                        <a class="proj-link" href="https://github.com/dighrasker/custom_ip_library" target="_blank" rel="noopener noreferrer">
                         repository
                         </a> 
-                        <a class="proj-link" href="470_Report.pdf" target="_blank" rel="noopener noreferrer">
-                        report
-                        </a>
                     </section>
 
                     </div>
