@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>projects — dhruv dighrasker</title>
+        <link rel="icon" type="image/png" href="image/Logo.png">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,38 +33,52 @@
                         <a href="projects/RVCPU.html">
                             <h2>127 mhz risc-v cpu</h2>
                             <span class="tech-tag">SystemVerilog</span>
+                            <p class="card-desc">n-way superscalar OoO processor on MIPS R10K with tournament branch predictor; 127 MHz, avg CPI 1.12</p>
                         </a>
                         <a href="projects/FAAA.html">
                             <h2>flashattention asic accelerator</h2>
                             <span class="tech-tag">SystemVerilog</span>
+                            <p class="card-desc">fixed-point ASIC for FlashAttention on edge platforms; 385 MHz with tile-based streaming memory management</p>
                         </a>
                         <a href="projects/WBC.html">
                             <h2>uvm env. for l2 cache</h2>
                             <span class="tech-tag">SystemVerilog / UVM</span>
+                            <p class="card-desc">UVM testbench for a 4-core RISC-V L2 cache with MESI coherence and AXI4-Lite; 95% functional coverage</p>
                         </a>
                         <a href="projects/CIPL.html">
                             <h2>custom rtl ip library</h2>
                             <span class="tech-tag">SystemVerilog</span>
+                            <p class="card-desc">parameterized RTL IP blocks — ALU, FIFOs, and arbiters — designed for SoC integration and reuse</p>
                         </a>
                         <a href="projects/FFC.html">
                             <h2>rtl four function calculator on fpga</h2>
                             <span class="tech-tag">Verilog / FPGA</span>
+                            <p class="card-desc">FSM-controlled RTL calculator on DE2-115 FPGA with Booth multiplier and ripple-carry adder</p>
                         </a>
                         <a href="projects/RCA.html">
                             <h2>8-bit ripple-carry adder</h2>
                             <span class="tech-tag">Cadence Virtuoso</span>
+                            <p class="card-desc">dual-mode adder: 1.51 GHz dual-rail domino (high-speed) and 1 GHz PTL/TGL (low-power) in Cadence Virtuoso</p>
                         </a>
                         <a href="projects/PMPS.html">
                             <h2>pipelined mips processor simulator</h2>
                             <span class="tech-tag">C</span>
+                            <p class="card-desc">cycle-accurate MIPS 5-stage pipeline simulator in C with forwarding, stall detection, and cache memory</p>
                         </a>
                         <a href="projects/CTL.html">
                             <h2>custom multi-thread library</h2>
                             <span class="tech-tag">C++</span>
+                            <p class="card-desc">user-level thread library in C++ supporting preemptive and cooperative multithreading with mutex and condition variables</p>
                         </a>
                     </div>
                 </div>
             </div>
         </main>
+        <script>
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                const current = window.location.pathname.split('/').pop() || 'index.html';
+                if (a.getAttribute('href') === current) a.classList.add('active');
+            });
+        </script>
     </body>
 </html>

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>about — dhruv dighrasker</title>
+        <link rel="icon" type="image/png" href="image/Logo.png">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,10 +44,38 @@
                             <p class="text">
                                 Thank you for visiting my page – I hope you find it insightful!
                             </p>
+
+                            <div class="skills-section">
+                                <p class="skills-label">technical skills</p>
+                                <div class="skills-grid">
+                                    <div class="skills-row">
+                                        <span class="skills-category">Languages</span>
+                                        <span class="skills-list">SystemVerilog, Verilog, C, C++, TCL, Bash</span>
+                                    </div>
+                                    <div class="skills-row">
+                                        <span class="skills-category">EDA Tools</span>
+                                        <span class="skills-list">Cadence Virtuoso, Synopsys DC, Verdi, ModelSim, Quartus</span>
+                                    </div>
+                                    <div class="skills-row">
+                                        <span class="skills-category">Methodologies</span>
+                                        <span class="skills-list">RTL Design, UVM, SVA, FPGA Synthesis, MESI Coherence, AXI4-Lite</span>
+                                    </div>
+                                    <div class="skills-row">
+                                        <span class="skills-category">Other</span>
+                                        <span class="skills-list">Git, Make, Linux</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+        <script>
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                const current = window.location.pathname.split('/').pop() || 'index.html';
+                if (a.getAttribute('href') === current) a.classList.add('active');
+            });
+        </script>
     </body>
 </html>

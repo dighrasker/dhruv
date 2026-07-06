@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
         <meta charset="UTF-8">
-
-        <!-- Specifies the compatibility mode for Internet Explorer -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- Sets the viewport properties for responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Title of the webpage -->
         <title>flashattention asic accelerator — dhruv dighrasker</title>
-
-        <!-- Link to the external stylesheet -->
+        <link rel="icon" type="image/png" href="../image/Logo.png">
         <link rel="stylesheet" href="../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
-        
-        
-        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -37,80 +26,75 @@
             </nav>
         </header>
         <main>
-            <!---------------------------Project Page------------------------------>
             <div id="projElt">
                 <div class="container">
-                <h1 class="sub-title">flashattention-asic-accelerator</h1>
+                    <h1 class="sub-title">flashattention asic accelerator</h1>
 
-                <div class="row">
-                    <!-- Keep left side blank -->
-                    <div class="about-col-1 proj-images">
-                        <img src="../image/570_Architectural_Diagram.png" alt="CPU Analysis Diagram">
-                        <img src="../image/FlashAttention2_Formula.png" alt="CPU Analysis Diagram">
-                        <img src="../image/ExpMul_Formula.png" alt="CPU Analysis Diagram">
-                        <!-- Add more images if you want -->
-                        <!-- <img src="image/CPU_Analysis_2.png" alt="Pipeline Diagram"> -->
+                    <div class="row">
+                        <div class="about-col-1 proj-images">
+                            <img src="../image/570_Architectural_Diagram.png" alt="A.U.R.A. ASIC architectural diagram">
+                            <img src="../image/FlashAttention2_Formula.png" alt="FlashAttention-2 algorithm formula">
+                            <img src="../image/ExpMul_Formula.png" alt="Fixed-point exponential multiply formula">
+                        </div>
+
+                        <div class="about-col-2">
+                            <div class="metrics-row">
+                                <div class="metric">
+                                    <span class="metric-value">2.6 ns</span>
+                                    <span class="metric-label">clock period</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">385 MHz</span>
+                                    <span class="metric-label">frequency</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Fixed-point</span>
+                                    <span class="metric-label">full pipeline</span>
+                                </div>
+                            </div>
+
+                            <section class="proj-section">
+                                <h2 class="proj-header">overview</h2>
+                                <p class="text">
+                                    we present a novel fixed-point ASIC accelerator for edge platforms that implements an IO-aware
+                                    algorithm that tiles Q, K, and V matrices and fuses softmax operations with surrounding matrix
+                                    multiplications. we design the quantization scheme, datapath, and control such that all major
+                                    components of the attention pipeline — including dot-product, softmax normalization, and value
+                                    accumulation — operate in fixed point while preserving high numerical fidelity.
+                                </p>
+                                <p class="text">
+                                    the design operates at a 2.6 ns clock period, or about 385 MHz. we implement memory management
+                                    using a streaming, tile-based organization that minimizes off-chip bandwidth while keeping the
+                                    PE block fully utilized.
+                                </p>
+                                <p class="text">
+                                    our experimental results show that our design significantly reduces power and area consumption
+                                    relative to prior FlashAttention accelerators, making A.U.R.A. particularly well suited for
+                                    edge deployments that require transformer-class models under tight energy and area budgets.
+                                </p>
+                            </section>
+
+                            <section class="proj-section">
+                                <h2 class="proj-header">tools</h2>
+                                <ul class="proj-list">
+                                    <li>verilog / systemverilog, tcl, verdi, bash, systemverilog assertions (sva)</li>
+                                </ul>
+                            </section>
+
+                            <section class="proj-section">
+                                <h2 class="proj-header">additional information</h2>
+                                <a class="proj-link" href="https://github.com/dwvshep/A.U.R.A.---FlashAttention-ASIC-Accelerator" target="_blank" rel="noopener noreferrer">repository</a>
+                                <a class="proj-link" href="../additional/570_Report.pdf" target="_blank" rel="noopener noreferrer">report</a>
+                            </section>
+                        </div>
                     </div>
-
-                    <!-- Right side content -->
-                    <div class="about-col-2">
-
-                    <!-- Overview -->
-                    <section class="proj-section">
-                        <h2 class="proj-header">overview</h2>
-                        <p class="text">
-                        We present a novel fixed-point ASIC accelerator
-                        for edge platforms that implements an IO-aware algorithm that
-                        tiles Q, K, and V matrices and fuses softmax operations with
-                        surrounding matrix multiplications. We design the quantization
-                        scheme, datapath, and control such that all major components
-                        of the attention pipeline - including dot-product, softmax nor-
-                        malization, and value accumulation - operate in fixed point
-                        while preserving high numerical fidelity.</p> <p class="text"> The design operates
-                        at a 2.6ns clock period, or about 385 MHz. We implement
-                        memory management using a streaming, tile-based organization
-                        that minimizes off-chip bandwidth while keeping the PE Block
-                        fully utilized. </p><p class="text">Our experimental results show that our design
-                        significantly reduces power and area consumption relative to
-                        prior FlashAttention accelerators, making A.U.R.A. particularly
-                        well suited for edge deployments that require transformer-class
-                        models under tight energy and area budgets. 
-                        </p>
-                        
-                    </section>
-
-                    <!-- Tools -->
-                    <section class="proj-section">
-                        <h2 class="proj-header">tools</h2>
-                        <ul class="proj-list">
-                        <li>verilog / systemverilog, tcl, verdi, bash, systemverilog assertions (sva) </li>
-                        <!-- <li>TCL</li>
-                        <li>Verdi</li>
-                        <li>Bash</li>
-                        <li>SystemVerilog Assertions (SVA)</li> -->
-                        </ul>
-                    </section>
-
-                    <!-- Additional Repo -->
-                    <section class="proj-section">
-                        <h2 class="proj-header">additional information</h2>
-                        <!-- <p class="text">
-                        You can view the project repository here
-                        </p> -->
-
-                        <!-- Replace with your real link -->
-                        <a class="proj-link" href="https://github.com/dwvshep/A.U.R.A.---FlashAttention-ASIC-Accelerator" target="_blank" rel="noopener noreferrer">
-                        repository
-                        </a> 
-                        <a class="proj-link" href="../additional/570_Report.pdf" target="_blank" rel="noopener noreferrer">
-                        report
-                        </a>
-                    </section>
-
-                    </div>
-                </div>
                 </div>
             </div>
         </main>
+        <script>
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                if (a.getAttribute('href') === '../projects.html') a.classList.add('active');
+            });
+        </script>
     </body>
 </html>

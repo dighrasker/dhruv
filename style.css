@@ -393,6 +393,130 @@ li {
   border: 1px solid var(--border);
 }
 
+/* ── Active nav state ────────────────────── */
+
+.nav-links a.active {
+  opacity: 1;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ── Project card description ────────────── */
+
+.card-desc {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+  margin-top: 0.2rem;
+  font-weight: 300;
+}
+
+/* ── Metrics callout ─────────────────────── */
+
+.metrics-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border-g);
+  border-radius: 6px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.metric-value {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Skills section (about page) ─────────── */
+
+.skills-section {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.skills-label {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.skills-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skills-category {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.skills-list {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+/* ── Home scroll prompt ──────────────────── */
+
+#home {
+  position: relative;
+}
+
+.scroll-prompt {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.scroll-prompt:hover {
+  opacity: 1;
+}
+
 /* ── Responsive ──────────────────────────── */
 
 @media (max-width: 640px) {

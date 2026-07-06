@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
         <meta charset="UTF-8">
-
-        <!-- Specifies the compatibility mode for Internet Explorer -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- Sets the viewport properties for responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Title of the webpage -->
         <title>custom rtl ip library — dhruv dighrasker</title>
-
-        <!-- Link to the external stylesheet -->
+        <link rel="icon" type="image/png" href="../image/Logo.png">
         <link rel="stylesheet" href="../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
-        
-        
-        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -37,69 +26,47 @@
             </nav>
         </header>
         <main>
-            <!---------------------------Project Page------------------------------>
             <div id="projElt">
                 <div class="container">
-                <h1 class="sub-title">custom rtl ip library</h1>
+                    <h1 class="sub-title">custom rtl ip library</h1>
 
-                <!-- <div class="row"> -->
-                    <!-- Keep left side blank -->
-                    <!-- <div class="about-col-1 proj-images"> -->
-                         <!-- <img src="image/CPU_Architectural_Diagram.png" alt="CPU Analysis Diagram"> -->
-                        <!-- <img src="image/CPU_Analysis.png" alt="CPU Analysis Diagram"> -->
-                        <!-- Add more images if you want -->
-                        <!-- <img src="image/CPU_Analysis_2.png" alt="Pipeline Diagram"> -->
-                    <!-- </div> -->
-
-                    <!-- Right side content -->
-                    <!-- <div class="about-col-2"> -->
-
-                    <!-- Overview -->
                     <section class="proj-section">
                         <h2 class="proj-header">overview</h2>
                         <p class="text">
-                        This project is a growing custom RTL IP library focused on designing reusable, parameterized 
-                        SystemVerilog components for processor datapaths and SoC-style systems. The library emphasizes 
-                        clean interfaces, hardware-realistic implementations, and composability, with IP blocks designed 
-                        to reflect patterns used in real microarchitectures rather than single-purpose designs. 
-                         </p> <p class="text">
-                        Current components include an RV32-style integer ALU, synchronous and asynchronous FIFOs for 
-                        buffering and clock-domain crossing, and configurable arbiters supporting round-robin and 
-                        fixed-priority policies. 
-                         </p> <p class="text">
-                        Planned extensions include a memory interface / BRAM wrapper and ready–valid pipeline registers 
-                        with skid buffering, targeting robust backpressure handling and timing-friendly integration. 
-                         </p> <p class="text">
-                        Together, the library serves as a foundation for building scalable RTL systems while enforcing 
-                        disciplined design and verification practices.
+                            this project is a growing custom RTL IP library focused on designing reusable, parameterized
+                            SystemVerilog components for processor datapaths and SoC-style systems. the library emphasizes
+                            clean interfaces, hardware-realistic implementations, and composability, with IP blocks designed
+                            to reflect patterns used in real microarchitectures rather than single-purpose designs.
                         </p>
-                        
+                        <p class="text">
+                            current components include an RV32-style integer ALU, synchronous and asynchronous FIFOs for
+                            buffering and clock-domain crossing, and configurable arbiters supporting round-robin and
+                            fixed-priority policies.
+                        </p>
+                        <p class="text">
+                            planned extensions include a memory interface / BRAM wrapper and ready–valid pipeline registers
+                            with skid buffering, targeting robust backpressure handling and timing-friendly integration.
+                        </p>
                     </section>
 
-                    <!-- Tools -->
                     <section class="proj-section">
                         <h2 class="proj-header">tools</h2>
                         <ul class="proj-list">
-                        <li>verilog / systemverilog, make, verdi, bash </li>
-                        <!-- <li>TCL</li>
-                        <li>Verdi</li>
-                        <li>Bash</li>
-                        <li>SystemVerilog Assertions (SVA)</li> -->
+                            <li>verilog / systemverilog, make, verdi, bash</li>
                         </ul>
                     </section>
 
-                    <!-- Additional Repo -->
                     <section class="proj-section">
                         <h2 class="proj-header">additional information</h2>
-                        <a class="proj-link" href="https://github.com/dighrasker/custom_ip_library" target="_blank" rel="noopener noreferrer">
-                        repository
-                        </a> 
+                        <a class="proj-link" href="https://github.com/dighrasker/custom_ip_library" target="_blank" rel="noopener noreferrer">repository</a>
                     </section>
-
-                    <!-- </div> -->
-                <!-- </div> -->
                 </div>
             </div>
         </main>
+        <script>
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                if (a.getAttribute('href') === '../projects.html') a.classList.add('active');
+            });
+        </script>
     </body>
 </html>

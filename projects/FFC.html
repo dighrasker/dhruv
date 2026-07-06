@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Specifies the character encoding for the document (browser interprets correctly) -->
         <meta charset="UTF-8">
-
-        <!-- Specifies the compatibility mode for Internet Explorer -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- Sets the viewport properties for responsive design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Title of the webpage -->
         <title>rtl four function calculator — dhruv dighrasker</title>
-
-        <!-- Link to the external stylesheet -->
+        <link rel="icon" type="image/png" href="../image/Logo.png">
         <link rel="stylesheet" href="../style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
-        
-        
-        <script src="https://kit.fontawesome.com/8da049c94c.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -37,64 +26,47 @@
             </nav>
         </header>
         <main>
-            <!---------------------------Project Page------------------------------>
             <div id="projElt">
                 <div class="container">
-                <h1 class="sub-title">rtl four function calculator on fpga</h1>
+                    <h1 class="sub-title">rtl four function calculator on fpga</h1>
 
-                <div class="row">
-                    <!-- Keep left side blank -->
-                    <div class="about-col-1 proj-images">
-                        <img src="../image/FourFuncCalc.png" alt="CPU Analysis Diagram">
-                        
-                        <!-- Add more images if you want -->
-                        <!-- <img src="image/CPU_Analysis_2.png" alt="Pipeline Diagram"> -->
+                    <div class="row">
+                        <div class="about-col-1 proj-images">
+                            <img src="../image/FourFuncCalc.png" alt="Four function calculator on DE2-115 FPGA board">
+                        </div>
+
+                        <div class="about-col-2">
+                            <section class="proj-section">
+                                <h2 class="proj-header">overview</h2>
+                                <p class="text">
+                                    this project implements a sequential four-function calculator supporting addition, subtraction,
+                                    multiplication, and division on 11-bit two's-complement operands, designed and verified at the
+                                    RTL level. the architecture is controlled by a finite-state machine (FSM) that coordinates
+                                    multi-cycle arithmetic operations, including a ripple-carry adder for addition/subtraction, a
+                                    Booth-encoded multiplier for efficient signed multiplication, and an integer quotient-based
+                                    divider for sequential division.
+                                </p>
+                                <p class="text">
+                                    the design was implemented in Verilog and deployed on the DE2-115 FPGA, with functional
+                                    correctness and edge-case behavior verified using ModelSim simulation.
+                                </p>
+                            </section>
+
+                            <section class="proj-section">
+                                <h2 class="proj-header">tools</h2>
+                                <ul class="proj-list">
+                                    <li>verilog, modelsim, quartus</li>
+                                </ul>
+                            </section>
+                        </div>
                     </div>
-
-                    <!-- Right side content -->
-                    <div class="about-col-2">
-
-                    <!-- Overview -->
-                    <section class="proj-section">
-                        <h2 class="proj-header">overview</h2>
-                        <p class="text">
-                        This project implements a sequential four-function calculator supporting addition, subtraction,
-                        multiplication, and division on 11-bit two’s-complement operands, designed and verified at the 
-                        RTL level. The architecture is controlled by a finite-state machine (FSM) that coordinates 
-                        multi-cycle arithmetic operations, including a ripple-carry adder for addition/subtraction, a 
-                        Booth-encoded multiplier for efficient signed multiplication, and an integer quotient-based 
-                        divider for sequential division.</p> <p class="text">The design was implemented in Verilog and deployed on the DE2-115 
-                        FPGA, with functional correctness and edge-case behavior verified using ModelSim simulation.</p>
-                        
-                    </section>
-
-                    <!-- Tools -->
-                    <section class="proj-section">
-                        <h2 class="proj-header">tools</h2>
-                        <ul class="proj-list">
-                        <li>verilog, modelsim, quartus</li>
-                        <!-- <li>TCL</li>
-                        <li>Verdi</li>
-                        <li>Bash</li>
-                        <li>SystemVerilog Assertions (SVA)</li> -->
-                        </ul>
-                    </section>
-
-                    <!-- Additional Repo -->
-                    <!-- <section class="proj-section">
-                        <h2 class="proj-header">additional information</h2>
-                        <a class="proj-link" href="https://github.com/dighrasker/MIPS_R10k_RISCV_OoO_Processor" target="_blank" rel="noopener noreferrer">
-                        repository
-                        </a> 
-                        <a class="proj-link" href="470_Report.pdf" target="_blank" rel="noopener noreferrer">
-                        report
-                        </a>
-                    </section> -->
-
-                    </div>
-                </div>
                 </div>
             </div>
         </main>
+        <script>
+            document.querySelectorAll('.nav-links a').forEach(a => {
+                if (a.getAttribute('href') === '../projects.html') a.classList.add('active');
+            });
+        </script>
     </body>
 </html>
